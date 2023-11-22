@@ -78,8 +78,8 @@ const App = () => {
       </section>
 
       <footer>
-        <p>Phone: +254708653733</p>
-        <p>info@jadzcotechsolutions.com</p>
+        <p>Phone: +254748678138</p>
+        <p>jadielkoome9@gmail.com</p>
         <p>© Jadzcotech Solutions 2023</p>
       </footer>
     </div>
