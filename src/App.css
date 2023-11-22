@@ -1,38 +1,134 @@
-.App {
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.app {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#home p{
+  color: aliceblue;
+  font-weight: bold;
+}
+#about p{
+  color: black;
+  font-weight: bold;
+}
+header {
+  background-color: black;
+  padding: 1em;
+  flex-direction: row;
+  position:sticky;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+section {
+  padding: 2em;
+}
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  bottom: 0;
+  width: 100%;
+}
+#home{
+  height: 100vh;
+  background-color: aliceblue;
+  background: url('././assets/jadzcohome.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about{
+  height: 100vh;
+  background-color: blue;
+  background: url('././assets/jadzcoaboutus.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+#services{
+  height: 100vh;
+  background-color: red;
+  background: url('././assets/jadzcoservices.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#services p{
+  font-weight: bold;
+
+}
+/* Add these styles at the end of your existing CSS file */
+
+#contact {
+  height: 100vh;
+  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('././assets/jadzcontacts.jpg') center/cover no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Add these styles at the end of your existing CSS file */
+
+/* Add these styles at the end of your existing CSS file */
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+#contact label{
+  color: white;
+}
+#contact textarea,
+#contact input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners for inputs only */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Background shadow */
+}
+
+#contact button {
+  background-color: #3498db; /* Blue color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  max-width: 200px;
+  align-self: center;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+#contact button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+
